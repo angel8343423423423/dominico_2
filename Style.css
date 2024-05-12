@@ -1,0 +1,359 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #CFCBC8;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #90553C;
+    box-shadow: 0 10px 6px 0 rgb(32 33 36 / 5%);
+    padding: 18px 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .6s;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.menu ul a{
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.menu ul a:hover{
+    transform: translateY(-4px);
+    transition: 1s;
+    background-color: #fff;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+
+.menu-rigt{
+    display: flex;
+    align-items: center;
+}
+
+.menu-rigt a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    margin: 0 10px;
+    transition: all .6s;
+}
+
+.menu-rigt a:hover{
+    transform: translateY(-4px);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #fff;
+    z-index: 10001;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding: 90px 14% 70px;
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(imagenes/elegant-female-model-elegant-white-shirt-suspenders-new-feminity-concept.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.text-home{
+    padding-top: 60px;
+}
+
+.text-home h1{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.text-home h6{
+    font-size: 15px;
+    font-weight: 500;
+    color: #666666;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.text-home p{
+    width: 100%;
+    max-width: 560px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 33px;
+    margin-bottom: 35px;
+    color: #4a4a4a;
+}
+
+.btn{
+    display: inline-block;
+    padding: 14px 42px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: all .6s;
+}
+
+.btn:hover{
+    transform: scale(0.9) translateY(-6px);
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+.hym{
+    display: flex;
+    justify-content: center;
+}
+
+.men{
+    background: url(imagenes/hombre-encantador-brunet-emocionado-chaqueta-naranja-camiseta-colorida-gafas-sol-canta-sonrie-sinceramente-escucha-musica-auriculares-afuera.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 650px;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.men h1{
+    justify-content: center;
+    padding: 170px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.men:hover{
+    transform: scale(1.1);
+    transition: .6s;
+}
+
+.women{
+    background: url(imagenes/hermosa-modelo-sonriente-peinado-cuernos-vestido-ropa-camiseta-blanca-hipster-verano-chica-despreocupada-sexy-posando-calle-cerca-pared-moda-mujer-divertida-positiva-divirtiendose-gafas-sol.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 650px;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.women h1{
+    justify-content: center;
+    padding: 170px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+.women:hover{
+    transform: scale(1.1);
+    transition: .6s;
+}
+
+.txt-centrado{
+    text-align: center;
+}
+
+.txt-centrado h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.n-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.row-img a{
+    border-radius: 28px;
+    margin-bottom: 15px;
+}
+
+.row-img img{
+    display: block;
+    width: 100%;
+    transition: transform 0.5s;
+    cursor: pointer;
+    border-radius: 28px;
+}
+
+.row-img img:hover{
+    transform: scale(1.1);
+}
+
+.row h3{
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.row-in{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.row-izq a{
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .6s;
+    color: #4a4a4a;
+}
+
+.row-izq a:hover{
+    color: #000;
+}
+
+.row-izq i{
+    margin-left: 6px;
+}
+
+.row-right h6{
+    font-size: 19px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+.n-btn{
+    text-align: center;
+    margin: 4rem;
+}
+
+.btn2{
+    display: inline-block;
+    padding: 14px 42px;
+    background: transparent;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #000;
+    border-radius: 30px;
+    transition: all .6s;
+}
+
+.btn2:hover{
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    transform: scale(0.9)translateY(-6px);
+}
+
+@media(max-width:1669px){
+    header{
+        padding: 15px 7%;
+    }
+
+    section{
+        padding: 78px 7% 80px;
+    }
+
+    .hym{
+        padding:20px 7%
+    }
+
+}
+
+@media(max-width:1045px){
+    header{
+        padding: 10px 4%;
+    }
+
+    section{
+        padding: 60px 4% 70px;
+    }
+
+    .hym{
+        padding:30px 4%
+    }
+
+    #menu-icon{
+        display: block;
+    }
+
+    .menu ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 60px;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        transition: all .50s ease;
+    }
+
+    .menu ul a{
+        display: block;
+        color: #4a4a4a;
+        padding: 0;
+        margin: 0px 0px 30px 0px;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+   .menu.open{
+    left: 100%;
+   }
+
+    .logo img{
+        width: 60px;
+    }
+
+    
+}
